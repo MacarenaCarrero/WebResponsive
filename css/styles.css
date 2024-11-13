@@ -22,3 +22,26 @@ body {
   margin: 0;
   font-family: sans-serif;
 }
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ width: 375px;
+ height: 538px;
+  padding: 24px;
+  background-image: url(../assets/mobile/image-header.jpg);
+  background-size: contain;
+  }
+
+.menu{
+  display: flex;
+  justify-content: space-between;
+  width: 327px;
+  height: 24px; 
+  margin-bottom: 88px;
+}
+
+.arrow{
+  width: 30px;
+  height: 107px;
+}
