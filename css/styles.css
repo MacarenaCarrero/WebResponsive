@@ -20,28 +20,57 @@ ul {
 }
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Barlow", sans-serif;
 }
-.header{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- width: 375px;
- height: 538px;
-  padding: 24px;
-  background-image: url(../assets/mobile/image-header.jpg);
-  background-size: contain;
-  }
-
-.menu{
+.bold{
+  text-align:center ;
+  font-family: "Fraunces", serif;
+  font-size:40px ;
+  color: white;
+  letter-spacing: 6px;
+}
+.nameBrand{
+  width: 124px;
+  height: 24px;
+}
+.containerHeader{
   display: flex;
   justify-content: space-between;
   width: 327px;
-  height: 24px; 
+  height: 24px;
   margin-bottom: 88px;
 }
-
+.header{
+width: 375px;
+height: 538PX;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px; 
+  background-image: url(../assets/mobile/image-header.jpg);
+  background-size: contain;
+}
+.hamburger{
+  right: 20px;
+}
+.menu{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  top: 82px;
+  left: 25px;
+  width: 329px;
+  height: 329px;
+  background-color: white;
+  translate:115%;
+  transition: translate 0.3s;
+}
+.menu-show{
+  translate: 0;
+}
 .arrow{
   width: 30px;
   height: 107px;
+  margin-top: 52px;
 }

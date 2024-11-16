@@ -3,17 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Fraunces:opsz,wght@9..144,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Document</title>
+    <title>Web Responsive</title>
   </head>
   <body>
     <header class="header">
-      <div class="menu">
-        <img src="./assets/logo.svg" alt="" />
-        <img src="./assets/icon-hamburger.svg" alt="" />
+      <div class="containerHeader">
+        <img class="nameBrand" src="./assets/logo.svg" alt="nameBrand" />
+        <img
+          class="hamburger"
+          id="hamburger"
+          src="./assets/icon-hamburger.svg"
+          alt=""
+        />
       </div>
-      <span>WE ARE CREATIVES</span>
+      <div>
+        <nav>
+          <ul id="menu" class="menu">
+            <li class="main-item">
+              <a class="menu-link" href="">About</a>
+            </li>
+            <li class="main-item">
+              <a class="main-link" href="">Services</a>
+            </li>
+            <li class="main-item">
+              <a class="main-link" href="">Projects</a>
+            </li>
+            <li class="main-item">
+              <button class="button-menu">CONTACT</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <span class="bold">WE ARE CREATIVES</span>
       <img class="arrow" src="./assets/icon-arrow-down.svg" alt="" />
     </header>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>
