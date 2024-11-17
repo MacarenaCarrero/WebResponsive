@@ -40,24 +40,47 @@ body {
   height: 24px;
   margin-bottom: 88px;
 }
+@media screen and (width>768px){
+  .containerHeader{
+    flex-direction: row;
+    width: 100vh;
+    height: 56px;
+    margin-bottom: 0;
+  }
+}
 .header{
-width: 375px;
-height: 538PX;
   display: flex;
   flex-direction: column;
+  width: 100vh;
   align-items: center;
   padding: 24px; 
   background-image: url(../assets/mobile/image-header.jpg);
   background-size: contain;
 }
+@media screen and (width>768px){
+  .header{
+    width: 100vh;
+    height: 800px;
+    background-repeat: no-repeat;
+background-size: cover;
+  }
+}
 .hamburger{
   right: 20px;
+}
+@media screen and (width>768px){
+  .hamburger{
+    display: none;
+  }
 }
 .menu{
   position: absolute;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-direction: column;
+  padding-top:63px ;
+  padding-bottom: 39px;
   top: 82px;
   left: 25px;
   width: 329px;
@@ -65,6 +88,33 @@ height: 538PX;
   background-color: white;
   translate:115%;
   transition: translate 0.3s;
+  border-radius: 12px;
+}
+@media screen and (width>768px){
+  .menu{
+    flex-direction: row;
+    background-color: transparent;
+    padding-top: 0;
+    padding-bottom:0 ;
+    top: 0;
+    left: 0;
+    translate: 0;
+    
+  }
+}
+.menu-link{
+  font-weight: 600; 
+  font-size: 20px ;
+  color: #808397;
+}
+.button-menu{
+  border: none;
+  width: 140px;
+  height: 56px;
+  border-radius: 28px;
+  background-color: #FBD600;
+  font-size: 15px;
+  font-family: "Fraunces", serif;
 }
 .menu-show{
   translate: 0;
