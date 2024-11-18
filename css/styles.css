@@ -22,18 +22,18 @@ body {
   margin: 0;
   font-family: "Barlow", sans-serif;
 }
-.bold{
-  text-align:center ;
+.bold {
+  text-align: center;
   font-family: "Fraunces", serif;
-  font-size:40px ;
+  font-size: 40px;
   color: white;
   letter-spacing: 6px;
 }
-.nameBrand{
+.nameBrand {
   width: 124px;
   height: 24px;
 }
-.containerHeader{
+.containerHeader {
   display: flex;
   justify-content: space-between;
   width: 327px;
@@ -41,64 +41,79 @@ body {
   margin-bottom: 88px;
 }
 
-.header{
+.header {
   display: flex;
   flex-direction: column;
   width: 375px;
   height: 538px;
   align-items: center;
-  padding: 24px; 
+  padding: 24px;
   background-image: url(../assets/mobile/image-header.jpg);
   background-size: contain;
   background-repeat: no-repeat;
 }
-
-.menu{
+@media screen and (width>768px) {
+  .header {
+  }
+}
+.menu {
   position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  padding-top:63px ;
+  padding-top: 63px;
   padding-bottom: 39px;
   top: 82px;
   left: 25px;
   width: 329px;
   height: 329px;
   background-color: white;
-  translate:115%;
+  translate: 115%;
   transition: translate 0.3s;
   border-radius: 12px;
 }
-
-.menu-link{
-  font-weight: 600; 
-  font-size: 20px ;
+@media screen and (width > 768px) {
+  .menu {
+    flex-direction: row;
+    background-color: transparent;
+    width: 467px;
+    height: 56px;
+  }
+}
+.menu-link {
+  font-weight: 600;
+  font-size: 20px;
   color: #808397;
 }
-.button-menu{
+@media screen and (width > 768px) {
+  .hamburger {
+    display: none;
+  }
+}
+.button-menu {
   border: none;
   width: 140px;
   height: 56px;
   border-radius: 28px;
-  background-color: #FBD600;
+  background-color: #fbd600;
   font-size: 15px;
   font-family: "Fraunces", serif;
 }
-.menu-show{
+.menu-show {
   translate: 0;
 }
-.arrow{
+.arrow {
   width: 30px;
   height: 107px;
   margin-top: 52px;
 }
-.containerMain{
+.containerMain {
   display: grid;
   grid-template-columns: 375px;
-  grid-template-rows:312px 437px 312px 437px 600px 600px 1258px;
+  grid-template-rows: 312px 437px 312px 437px 600px 600px 1258px;
 }
-.text-box{
+.text-box {
   display: flex;
   font-size: 18px;
   flex-direction: column;
@@ -112,114 +127,112 @@ body {
   color: #808397;
   padding-top: 64px;
   padding-left: 54px;
-
 }
-.h2{
+.h2 {
   font-family: "Fraunces", serif;
   margin: 0;
   font-size: 32px;
   color: black;
   margin-bottom: 24px;
 }
-.learnMore{
+.learnMore {
   color: black;
   font-family: "Fraunces", serif;
   font-size: 15px;
   margin-top: 32px;
 }
-.imgYtext{
+.imgYtext {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
   text-align: center;
 }
-.cereza{
+.cereza {
   background-image: url(../assets/mobile/image-graphic-design.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.naranja{
+.naranja {
   background-image: url(../assets/mobile/image-photography.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.h3{
+.h3 {
   font-family: "Fraunces", serif;
   font-size: 28px;
-  color: #24554A;
+  color: #24554a;
   margin-bottom: 27px;
 }
-.subtitleH3{
+.subtitleH3 {
   font-size: 16px;
   width: 327px;
-  color: #24554A;
+  color: #24554a;
   font-weight: 600;
   line-height: 27px;
   margin-bottom: 59px;
 }
-.container-testimonials{
+.container-testimonials {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-
 }
-.imgUser{
- width: 72px; 
- border-radius:40px ;
- margin-bottom: 32px;
+.imgUser {
+  width: 72px;
+  border-radius: 40px;
+  margin-bottom: 32px;
 }
-.card-user{
+.card-user {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 327px;
   height: 320px;
 }
-.h4{
+.h4 {
   font-family: "Fraunces", serif;
   font-size: 16px;
-  color: #A7AAAD;
-  margin-top:64px ;
+  color: #a7aaad;
+  margin-top: 64px;
 }
-.name{
+.name {
   font-family: "Fraunces", serif;
   font-size: 18px;
-  color:#24303E ;
+  color: #24303e;
   font-weight: 700;
   margin-bottom: 9px;
 }
-.review{
+.review {
   font-size: 18px;
   font-weight: 600;
-  color: #5B636D;
+  color: #5b636d;
   line-height: 32px;
   margin-bottom: 32px;
 }
-.lastImages{
+.lastImages {
   display: grid;
   grid-template-columns: repeat(2, 188px);
 }
-.footer{
-  background-color: #90D4C6;
+.footer {
+  background-color: #90d4c6;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   height: 350px;
 }
-.options{
+.options {
   display: flex;
   justify-content: space-between;
   width: 297px;
   font-size: 18px;
   font-weight: 600;
-  color: #458D7E;
+  color: #458d7e;
 }
-.socialMedia{
+.socialMedia {
   display: flex;
   justify-content: space-between;
   width: 164px;
